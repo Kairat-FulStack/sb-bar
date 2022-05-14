@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+}
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+/*!================================================ header ========================================================= */
+header{
+    display: flex;
+    width: 100%;
+    height: 112px;
+}
+.header__list-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.header__menu{
+    list-style-type: none;
+}
+.header__menu > a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+.icon_sign-in{
+    width: 15px;
+    height: 20px;
+    margin-right: 15px;
+}
+.header__menu-icon{
+    display: flex;
+}
+/*!================================================== section slider ================================================= */
+.slider{
+    background: url('../img/slider_steak.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 790px;
+    overflow: hidden;
+    margin: auto;
+}
+.navigation{
+    position: absolute;
+    bottom: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ddd;
+    opacity: .7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover{
+    opacity: .8;
+    transform: scale(1.1);
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -25%;
+}
+#r3:checked ~ .s1{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1{
+    margin-left: -75%;
+}
+.signature_steak{
+    position: absolute;
+    left: 76px;
+    bottom: -138px;
+    color: #ddd;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 88px;
+}
+/*! ------------------------------- menu --------------------- */
+.menu{
+    width: 100%;
+    background: url('../img/wallpaper.png');
+    margin-bottom: 45px;
+}
+.menu__burger{
+    z-index: 2;
+}
+.text_menu{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-right: 46px;
+}
+.menu__burger-list{
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.menu__burger-list > li{
+    margin-right: 27px;
+    transition-duration: all .6s ease;
+}
+.first{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.menu__burger-list > li:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 24px;
+}
+/*!---------------------- menu food ----------------*/
+.menu__food{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.menu__food_dish{
+    width: 310px;
+    margin: 0 25px;
+}
+.menu__food_text-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+.menu__food_text-p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+.menu__food_ptice_amous_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+.amount{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+.amount::after{
+    content: '+';
+    margin: 10px;
+}
+.amount::before{
+    content: '-';
+    margin: 10px;
+}
+.btn_in-garbage{
+    width: 117px;
+    height: 40px;
+    background: none;
+    color: #fff;
+    border: 1px solid #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
