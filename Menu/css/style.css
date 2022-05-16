@@ -31,7 +31,7 @@ header{
     text-decoration: none;
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: #fff;
@@ -117,19 +117,22 @@ header{
     font-size: 16px;
     line-height: 20px;
 }
+.count{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
+.btn_primary{
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 .amount{
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-}
-.amount::after{
-    content: '+';
-    margin: 10px;
-}
-.amount::before{
-    content: '-';
-    margin: 10px;
 }
 .btn_in-garbage{
     width: 117px;
@@ -142,6 +145,7 @@ header{
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .menu__btn{
     width: 100%;

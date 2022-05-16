@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -13,14 +14,16 @@
         <header>
             <ul class="header__list-menu">
                 <li class="header__menu"><a href="http://127.0.0.1:5500/Menu/html/index.html">Меню</a></li>
-                <li class="header__menu"><a href="">Акции</a></li>
+                <li class="header__menu"><a href="http://127.0.0.1:5500/acion-main/index.html">Акции</a></li>
                 <li class="header__menu"><a href="">О нас</a></li>
-                <img class="header__img-logo" src="../img/logo.png">
-                <li class="header__menu"><a href="">Контакты</a></li>
+                <a href="http://127.0.0.1:5500/Main_page/html/index.html">
+                    <img class="header__img-logo" src="../img/logo.png">
+                </a> 
+                <li class="header__menu"><a href="http://127.0.0.1:5500/contacts-main/index.html">Контакты</a></li>
                 <li class="header__menu">
                     <a class="header__menu-icon" href=""><img class="icon_sign-in" src="../img/Vector.png"> Войти </a>
                 </li>
-                <li class="header__menu"><a href=""><img src="../img/basket.png"></a></li>
+                <li class="header__menu"><a href="http://127.0.0.1:5500/basket-main/index.html"><img src="../img/basket.png"></a></li>
             </ul>
         </header>
         <!--!-------------------- section slider --------------------- -->
@@ -74,7 +77,11 @@
                         <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
                         <div class="menu__food_ptice_amous_btn">
                             <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
+                            <div class="count">
+                                <button class="btn_primary minus" data-id="sisle13">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="sisle13">+</button>
+                            </div>
                             <button class="btn_in-garbage">в корзину</button>
                         </div>
                     </div>
@@ -86,7 +93,11 @@
                         <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
                         <div class="menu__food_ptice_amous_btn">
                             <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
+                            <div class="count">
+                                <button class="btn_primary minus" data-id="afdgj213">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="afdgj213">+</button>
+                            </div>
                             <button class="btn_in-garbage">в корзину</button>
                         </div>
                     </div>
@@ -98,45 +109,11 @@
                         <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
                         <div class="menu__food_ptice_amous_btn">
                             <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
-                            <button class="btn_in-garbage">в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu__food">
-                <div>
-                    <div class="menu__food_dish">
-                        <div class="menu__food_dish-img"><img src="../img/dish_img.png"></div>
-                        <h3 class="menu__food_text-title">Форель с булгуром</h3>
-                        <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
-                        <div class="menu__food_ptice_amous_btn">
-                            <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
-                            <button class="btn_in-garbage">в корзину</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="menu__food_dish">
-                        <div class="menu__food_dish-img"><img src="../img/dish_img.png"></div>
-                        <h3 class="menu__food_text-title">Форель с булгуром</h3>
-                        <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
-                        <div class="menu__food_ptice_amous_btn">
-                            <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
-                            <button class="btn_in-garbage">в корзину</button>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="menu__food_dish">
-                        <div class="menu__food_dish-img"><img src="../img/dish_img.png"></div>
-                        <h3 class="menu__food_text-title">Форель с булгуром</h3>
-                        <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
-                        <div class="menu__food_ptice_amous_btn">
-                            <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
+                            <div class="count">
+                                <button class="btn_primary plus" data-id="">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="">+</button>
+                            </div>
                             <button class="btn_in-garbage">в корзину</button>
                         </div>
                     </div>
@@ -150,7 +127,11 @@
                         <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
                         <div class="menu__food_ptice_amous_btn">
                             <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
+                            <div class="count">
+                                <button class="btn_primary plus" data-id="">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="">+</button>
+                            </div>
                             <button class="btn_in-garbage">в корзину</button>
                         </div>
                     </div>
@@ -162,7 +143,11 @@
                         <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
                         <div class="menu__food_ptice_amous_btn">
                             <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
+                            <div class="count">
+                                <button class="btn_primary plus" data-id="">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="">+</button>
+                            </div>
                             <button class="btn_in-garbage">в корзину</button>
                         </div>
                     </div>
@@ -174,7 +159,61 @@
                         <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
                         <div class="menu__food_ptice_amous_btn">
                             <p class="price">1000 сом</p>
-                            <p class="amount">1</p>
+                            <div class="count">
+                                <button class="btn_primary plus" data-id="">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="">+</button>
+                            </div>
+                            <button class="btn_in-garbage">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__food">
+                <div>
+                    <div class="menu__food_dish">
+                        <div class="menu__food_dish-img"><img src="../img/dish_img.png"></div>
+                        <h3 class="menu__food_text-title">Форель с булгуром</h3>
+                        <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
+                        <div class="menu__food_ptice_amous_btn">
+                            <p class="price">1000 сом</p>
+                            <div class="count">
+                                <button class="btn_primary plus" data-id="">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="">+</button>
+                            </div>
+                            <button class="btn_in-garbage">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="menu__food_dish">
+                        <div class="menu__food_dish-img"><img src="../img/dish_img.png"></div>
+                        <h3 class="menu__food_text-title">Форель с булгуром</h3>
+                        <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
+                        <div class="menu__food_ptice_amous_btn">
+                            <p class="price">1000 сом</p>
+                            <div class="count">
+                                <button class="btn_primary plus" data-id="">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="">+</button>
+                            </div>
+                            <button class="btn_in-garbage">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="menu__food_dish">
+                        <div class="menu__food_dish-img"><img src="../img/dish_img.png"></div>
+                        <h3 class="menu__food_text-title">Форель с булгуром</h3>
+                        <p class="menu__food_text-p">Описание продукта, особенности, плюсы и минусы. </p>
+                        <div class="menu__food_ptice_amous_btn">
+                            <p class="price">1000 сом</p>
+                            <div class="count">
+                                <button class="btn_primary plus" data-id="">-</button>
+                                <p class="amount">1</p>
+                                <button class="btn_primary plus" data-id="">+</button>
+                            </div>
                             <button class="btn_in-garbage">в корзину</button>
                         </div>
                     </div>
@@ -182,5 +221,7 @@
             </div>
         </section>
     </div>
+    <div id="output"></div>
+    <script src="../js/script.js"></script>
 </body>
 </html>
